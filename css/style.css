@@ -1,7 +1,6 @@
 body, .btn, a {
     color: black;
 }
-
 a {
     text-decoration: none;
 }
@@ -9,20 +8,28 @@ a:hover {
     text-decoration: underline;
 }
 
-.wea-logo {
-    height: 40vw;
-    opacity: 0.8;
-    border-radius: 40%;
-}
 
 main {
     background-image: url("../img/bg-img.jpg");
     background-position: center;
-    height: 70vh;
     background-size: cover;
+    height: 70vh;
+}
+header {
+    height: 20vh;
+}
+footer {
+    height: 10vh;
 }
 
- header, footer {
+.wea-logo {
+    height: 15vh;
+    min-height: 100px;
+    opacity: 0.8;
+    border-radius: 40%;
+}
+
+ header, footer, nav {
     background:
 		radial-gradient(300px circle at 73% 60%, rgba(69,28,84,.5),rgba(69,28,84,0)),
 		radial-gradient(280px circle at 52% 70%, rgba(220,123,67,.65),rgba(220,123,67,0)),
@@ -41,16 +48,10 @@ main {
 }
 
 .dropdown-menu {
- background-color: rgba(169,82,160, 0.3);   
+ background-color: rgba(91, 82, 169, 0.3);   
 }
 .dropdown-menu > li > a:hover {
     background-color: rgba(214, 157, 208, 0.3);   
-}
-
-footer {
-    position: relative;
-    height: 15vh;
-    bottom: 0px;
 }
 
 @media (max-width: 576px ) {
