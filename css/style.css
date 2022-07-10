@@ -65,11 +65,15 @@ footer {
     text-decoration: none;
 }
 
-.wea-logo {
+.wea-logo-left {
     height: 15vh;
     min-height: 100px;
-    opacity: 0.8;
-    border-radius: 40%;
+}
+
+.wea-logo-right {
+    display: none;
+    height: 15vh;
+    min-height: 100px;
 }
 
 h1{
@@ -94,9 +98,6 @@ main > section > h2, main > section > p {
 }
 
 @media (min-width: 320px ) {
-    h1{
-        display: block;
-    }
     header {
         min-height: 180px;
     }
@@ -106,5 +107,17 @@ main > section > h2, main > section > p {
 @media (min-width: 420px ) {
     header {
         min-height: 120px;
+    }
+    h1{
+        display: block;
+    }
+}
+
+@media (min-width: 1024px ) {
+    .wea-logo-left{
+        display: none;
+    }
+    .wea-logo-right {
+        display: initial;
     }
 }
