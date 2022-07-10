@@ -17,11 +17,7 @@ header, footer, nav {
 		radial-gradient(480px circle at 40% 75%, rgba(192,40,89,1),rgba(192,40,89,0)),
 		radial-gradient(480px circle at 38% 95%, rgba(192,40,89,1),rgba(192,40,89,0)),
 		radial-gradient(435px circle at 65% 73%, rgba(235,188,143, 1), rgba(235,188,143, 0)),
-		radial-gradient(850px circle at right top, rgba(147,17,87, 1), rgba(147,17,87, .9), rgba(209,64,97,.4), rgba(209,64,97,0)),
-		radial-gradient(422px circle at right 75%, rgba(35,173,149, 1), rgba(35,173,149, 0)),
-		radial-gradient(350px circle at right 50%, rgba(204,116,96, 1), rgba(204,116,96,0)),
-		radial-gradient(300px circle at right bottom, rgba(169,82,160, 1),  rgba(169,82,160, 0)),
-		linear-gradient(to right bottom, rgba(27, 5, 87, 1), rgba(71,17,77, 1) 40%, rgba(71,17,77, 1) 60%, rgba(71,17,77, 1)),
+		linear-gradient(to right bottom, rgb(52, 31, 109), rgb(137, 66, 145) 40%, rgb(132, 64, 139) 60%, rgb(137, 58, 146)),
 		linear-gradient(to right, #7f5d996c, #b8205d);
 }
 .dropdown-menu {
@@ -42,12 +38,7 @@ main {
 }
 header {
     height: 20vh;
-    min-height: 120px;
-    z-index: 2;
-}
-
-nav {
-    z-index: 1;
+    min-height: 110px;
 }
 
 footer {
@@ -86,38 +77,33 @@ main > section {
     height: 100%;
     width: 80vw;
     margin-left: 2.5vw;
-    background-color: rgba(151, 158, 250, 0.65);
-    border-radius: 10%;
+    background-color: rgba(151, 158, 250, 0.75);
     min-height: 150px;
+    box-shadow: 5px 5px 20px rgba(51, 54, 87, 0.644) ;
 }
 
-main > section > h2, main > section > p {
+main > section > h2 {
     padding: 2rem;
-    color: rgb(0, 0, 0) ;
+    font-size: 5vw;
     font-weight: bold;
 }
-
-@media (min-width: 320px ) {
-    header {
-        min-height: 180px;
-    }
-
+main > section > p {
+    font-size: 2em ;
 }
 
 @media (min-width: 420px ) {
-    header {
-        min-height: 120px;
-    }
     h1{
         display: block;
     }
+    
 }
 
-@media (min-width: 1060px ) {
+@media (min-width: 1200px ) {
     .wea-logo-left{
         display: none;
     }
     .wea-logo-right {
         display: initial;
     }
+
 }
