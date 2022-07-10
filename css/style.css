@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Permanent+Marker');
+
 body, .btn, a {
     color: black;
-    font-family: nunito, sans-serif;
+    font-family: 'nunito', sans-serif;
 }
 a {
     text-decoration: none;
@@ -8,6 +10,13 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+h1, h2, h3 {
+    font-family: 'Permanent Marker', cursive;
+}
+section > section > h2, h3 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
 h1{
     display: none;
     margin-left: 2vw;
@@ -84,14 +93,22 @@ main > section {
     background-color: rgba(151, 158, 250, 0.75);
     min-height: 150px;
     box-shadow: 5px 5px 20px rgba(51, 54, 87, 0.644) ;
+    overflow: auto;
+    text-align: center;
+}
+main > section > section{
+    background-color: rgba(189, 192, 238, 0.75);
+    box-shadow: 5px 5px 20px rgba(51, 54, 87, 0.644) ;
+    border-radius: 30%;
+    padding: 5%;
 }
 
-main > section > h2 {
+h2, h3 {
     padding: 2rem;
     font-size: 12px;
     font-weight: bold;
 }
-main > section > p {
+main > section > p, main > section > section > p {
     font-size: 12px;
 }
 
@@ -100,10 +117,10 @@ main > section > p {
         display: block;
         font-size: 3vw;
     }
-    main > section > h2 {
+    h2, h3 {
         font-size: 2.5vw;
     }
-    main > section > p {
+    main > section > p, main > section > section > p {
         font-size: 2vw;
     }
     
@@ -119,10 +136,10 @@ main > section > p {
     h1{
         font-size: 2vw;
     }
-    main > section > h2 {
+    main > section > h2, main > section > h3 {
         font-size: 1.8vw;
     }
-    main > section > p {
+    main > section > p, main > section > section > p {
         font-size: 1vw;
     }
     footer > .btn {
@@ -145,10 +162,10 @@ main > section > p {
     h1{
         font-size: 2.1vw;
     }
-    main > section > h2 {
+    h2, h3 {
         font-size: 2vw;
     }
-    main > section > p {
+    main > section > p, main > section > section > p {
         font-size: 1.8vw;
     }
     footer > .btn {
