@@ -1,5 +1,6 @@
 body, .btn, a {
     color: black;
+    font-family: nunito, sans-serif;
 }
 a {
     text-decoration: none;
@@ -7,6 +8,13 @@ a {
 a:hover {
     text-decoration: underline;
 }
+h1{
+    display: none;
+    margin-left: 2vw;
+    font-weight: 1000;
+    font-size: 25px;
+}
+
 
 header, footer, nav {
     background:
@@ -67,15 +75,9 @@ footer {
     min-height: 100px;
 }
 
-h1{
-    display: none;
-    margin-left: 2vw;
-}
-
-
 main > section {
     height: 100%;
-    width: 80vw;
+    width: 85vw;
     margin-left: 2.5vw;
     background-color: rgba(151, 158, 250, 0.75);
     min-height: 150px;
@@ -84,11 +86,11 @@ main > section {
 
 main > section > h2 {
     padding: 2rem;
-    font-size: 5vw;
+    font-size: 4vw;
     font-weight: bold;
 }
 main > section > p {
-    font-size: 2em ;
+    font-size: 2vw;
 }
 
 @media (min-width: 420px ) {
@@ -105,5 +107,15 @@ main > section > p {
     .wea-logo-right {
         display: initial;
     }
+    h1{
+        font-size: 45px;
+    }
+    main > section > h2 {
+        font-size: 2vw;
+    }
+    main > section > p {
+        font-size: 1vw;
+    }
+    
 
 }
