@@ -40,7 +40,7 @@ h1{
     background-color: rgba(151, 158, 250, 0.75);
 }
 .dropdown-menu{    
-    background-color: rgba(223, 228, 251, 0.4);
+    background-color: rgba(189, 192, 238, 0.75);
 }
 .dropdown-menu > li > a:hover {
     background-color: rgba(151, 158, 250, 0.65);;   
